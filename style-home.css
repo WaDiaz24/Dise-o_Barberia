@@ -1,11 +1,15 @@
 header {
     padding: 25px 0;
-    background: #eee;
+    background: url(images/fondo-encabezado.jpg);
+    height: 290px;
 }
 .encabezado {
     width: 940px;
     position: relative;
     margin: 0 auto;  
+}
+.logo {
+    width: 300px;
 }
 nav {
     position: absolute;
@@ -21,5 +25,9 @@ nav a {
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
-    color: black;
+    color: white;
+}
+nav a:hover {
+    color: rgb(0, 183, 255);
+    text-decoration: underline;
 }
