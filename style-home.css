@@ -31,3 +31,20 @@ nav a:hover {
     color: rgb(0, 183, 255);
     text-decoration: underline;
 }
+footer {
+    background: url(images/fondo-footer.jpg);
+    text-align: center;
+    padding: 20px 0;
+}
+.redes-sociales img {
+    width: 30px;
+    margin: 20px 10px 10px 10px;
+}
+.redes-sociales img:hover {
+    box-shadow: 10px 10px 30px 15px #000;
+}
+.copyright {
+    color: #fff;
+    font-size: 13px;
+    margin: 10px 0 20px 0;
+}
