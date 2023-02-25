@@ -1,0 +1,82 @@
+.formulario {
+    background: #eeeeee;
+    padding-left: 20%;
+    padding-right: 50%;
+    font-size: 20px;
+}
+.grupo-formulario {
+    padding: 30px 0 0;
+}
+.grupo-formulario label {
+    cursor: pointer;
+}
+/*.grupo-inputs {
+    position: relative;
+}*/
+.inputs {
+    width: 85%;
+    margin: 10px 0 0 ;
+    padding: 10px 25px;
+    line-height: 25px;
+    font-size: 17px;
+}
+.radio-contactos {
+    margin: 10px 0;
+}
+.radio-contactos legend {
+    font-weight: bold;
+}
+.radios {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.caja-horarios {
+    width: 100px;
+    font-size: 16px;
+    padding: 5px 0;
+    margin: 10px 0 12px;
+}
+.button-enviar {
+    display: block;
+    width: 95%;
+    padding: 15px 0;
+    margin: 15px 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    background: rgb(0, 183, 255);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.button-enviar:hover {
+    background: #ffc600;
+    transform: scale(1.2);
+}
+.fondo-tabla {
+    padding: 0 0 2% 25%;
+    background: linear-gradient(#eeeeee, #8e8e8e);
+}
+.titulo-horario {
+    font-size: 2em;
+    padding: 30px 0 10px;
+    font-weight: bold;
+}
+.tabla-horario {
+    padding: 40px 0;
+    font-size: 18px;
+}
+thead th {
+    background: #ffc600;
+    color: #000000;
+    font-weight: bold;
+    padding: 5px 0;
+    border: 1px solid #000000;
+}
+tbody th {
+    background: #eeeeee;
+    padding: 10px 8px;
+    border: 1px solid #000000;
+}

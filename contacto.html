@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset-css/reset.css">
     <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="contact-style.css">
     <title>Contacto - Barberia 5 Estrellas</title>
 </head>
+
 <body>
     <header>
         <div class="encabezado">
@@ -22,7 +25,79 @@
         </div>
     </header>
     <main>
-        
+        <form action="" class="formulario">
+            <div class="grupo-formulario">
+                <label for="nombre-apellido">Nombre y Apellido</label>
+                <div class="grupo-inputs">
+                    <input type="text" class="inputs" name="nombre" id="nombre-apellido" required
+                        placeholder="Nombre Apellido">
+                </div>
+            </div>
+            <div class="grupo-formulario">
+                <label for="email">Correo Electrónico</label>
+                <div class="grupo-inputs">
+                    <input type="email" class="inputs" name="correo-electronico" id="email" required
+                        placeholder="email@dominio.com">
+                </div>
+            </div>
+            <div class="grupo-formulario">
+                <label for="telefono">Teléfono</label>
+                <div class="grupo-inputs">
+                    <input type="text" class="inputs" name="nombre" id="telefono" required placeholder="000 000 00 00">
+                </div>
+            </div>
+            <div class="grupo-formulario">
+                <label for="caja-texto">Mensaje</label>
+            </div>
+            <textarea name="mensaje" id="caja-texto" cols="30" rows="4" class="inputs" required></textarea>
+            <fieldset class="radio-contactos">
+                <legend class="titulos-preguntas">¿Cómo le gustaría que lo contactemos?</legend>
+                <label for="email-radio" class="radios">
+                    <input type="radio" name="contacto" id="email-radio">Correo Electrónico
+                </label>
+                <label for="telefono-radio" class="radios">
+                    <input type="radio" name="contacto" id="telefono-radio">Teléfono
+                </label>
+                <label for="whatsapp" class="radios">
+                    <input type="radio" name="contacto" id="whatsapp" checked>WhatsApp
+                </label>
+            </fieldset>
+            <fieldset class="radio-contactos">
+                <legend>¿Que horario prefiere ser atendido?</legend>
+                <select class="caja-horarios">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+            </fieldset>
+            <label for="informacion-barberia"><input type="checkbox" id="informacion-barberia" checked>¿Le gustaria recibir información de la Barbería 5 Estrellas?</label>
+            <input type="submit" value="Enviar Formulario" class="button-enviar">
+        </form>
+        <div class="fondo-tabla">
+            <table class="tabla-horario">
+                <thead>
+                    <p class="titulo-horario">Horarios de Atención</p>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Lunes a Viernes</th>
+                        <th>8 am ~ 6 pm</th>
+                    </tr>
+                    <tr>
+                        <th>Sábados</th>
+                        <th>8 am ~ 8pm</th>
+                    </tr>
+                    <tr>
+                        <th>Domingos</th>
+                        <th>8 am ~ 12 pm</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer>
         <img class="logo" src="images/logo-footer.png" alt="Este es el logo de la barberia 5 Estrellas">
@@ -34,4 +109,5 @@
         <p class="copyright">&copy Copyright - Barberia 5 Estrellas</p>
     </footer>
 </body>
+
 </html>

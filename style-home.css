@@ -3,23 +3,28 @@ header {
     background: url(images/fondo-encabezado.jpg);
     height: 290px;
 }
+
 .encabezado {
     width: 940px;
     position: relative;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
+
 .logo {
     width: 300px;
 }
+
 nav {
     position: absolute;
     top: 110px;
     right: 0;
 }
+
 nav li {
     display: inline;
     margin: 0 15px;
 }
+
 nav a {
     text-transform: uppercase;
     font-weight: bold;
@@ -27,41 +32,50 @@ nav a {
     text-decoration: none;
     color: white;
 }
+
 nav a:hover {
     color: rgb(0, 183, 255);
     text-decoration: underline;
 }
+
 footer {
     background: url(images/fondo-footer.jpg);
     text-align: center;
     padding: 20px 0;
 }
+
 .redes-sociales img {
     width: 30px;
     margin: 20px 10px 10px 10px;
 }
+
 .redes-sociales img:hover {
     box-shadow: 10px 10px 30px 15px #000;
 }
+
 .copyright {
     color: #fff;
     font-size: 13px;
     margin: 10px 0 20px 0;
 }
+
 /*Comienza los estilos para nuestro home*/
 .caja-principal {
     background: linear-gradient(#cccccc, #ffffff);
 }
+
 .secciones {
     width: 940px;
     margin: 0 auto;
     padding: 3em 0 5em 0;
 }
+
 .titulos {
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
 }
+
 .img-banner {
     opacity: 90%;
     margin: 0 0 0 30px;
@@ -69,130 +83,184 @@ footer {
     float: right;
     box-shadow: 0 0 20px 2px #000;
 }
+
 .secciones p {
     margin: 0 0 1em;
     font-size: 17px;
 }
+
 strong {
     font-weight: bold;
 }
+
 .mision {
     font-style: italic;
 }
+
 .img-diferenciales {
     margin: 0 50px 10px;
     height: 300px;
     float: left;
     box-shadow: 0 0 20px 2px #000;
 }
+
 .img-diferenciales:hover {
     opacity: 0.7;
 }
+
 ul {
     padding: 0 0 100px 0;
 }
+
 ul li {
     font-size: 17px;
     padding: 3px 0;
 }
+
 li::before {
     content: "✂";
 }
+
 .mapa {
     background: linear-gradient(#fefefe, #8e8e8e);
     text-align: center;
 }
+
 .parrafo-ubicacion {
     padding-bottom: 20px;
     font-size: 17px;
 }
+
 .mapa iframe {
     box-shadow: 0 0 20px 2px #000;
     margin: 0 0 40px;
 }
+
 /*mediaqueries*/
 @media screen and (max-width:540px) {
     .encabezado {
         width: 100%;
         text-align: center;
     }
+
     .logo {
         width: 200px;
     }
+
     nav {
         position: static;
     }
+
     nav li {
         display: block;
     }
+
     .titulos {
         margin: 0 0 20px;
     }
-    .img-banner, .img-diferenciales {
+
+    .img-banner,
+    .img-diferenciales {
         margin: 0;
         float: none;
         height: 230px;
     }
+
     .secciones {
         width: 100%;
         padding: 1em 0 0;
         text-align: center;
     }
+
     .secciones p {
         padding: 10px 10px 0 10px;
     }
+
     ul {
         padding: 10px 0 20px;
     }
+
     .secciones ul li {
         text-align: initial;
         padding: 3px 0 3px 30px;
     }
+
     .mapa iframe {
         width: auto;
-    }  
+    }
 }
-@media (min-width:541px ) and (max-width:800px) {
+
+@media (min-width:541px) and (max-width:800px) {
     .encabezado {
         width: 100%;
         text-align: center;
     }
+
     .logo {
         width: 250px;
     }
+
     nav {
         position: static;
     }
+
     .secciones {
         width: 100%;
         padding: 1em 0 0;
         text-align: center;
     }
+
     .titulos {
         margin: 0 0 20px;
     }
-    .img-banner, .img-diferenciales {
+
+    .img-banner,
+    .img-diferenciales {
         margin: 0;
         float: none;
     }
+
     .secciones p {
         padding: 10px 10px 0 10px;
         text-align: left;
     }
+
     ul {
         padding: 10px 0 20px;
     }
+
     .secciones ul li {
         text-align: initial;
         padding: 3px 0 3px 80px;
     }
+
     .mapa iframe {
         width: auto;
     }
 }
-/*.secciones p {
-    margin: 0 0 1em 20px;
-    ul {
-        padding: 0 0 150px;
+
+@media (min-width: 801px) and (max-width:1100px) {
+    .encabezado {
+        width: 100%;
     }
-}*/
+    .encabezado .logo {
+        position: absolute;
+        left: 25px;
+    }
+    nav {
+        right: 25px;
+    }
+    .secciones {
+        width: 100%;
+        padding: 3em 0;
+    }
+    .img-banner {
+       margin: 0 20px; 
+    }
+    .secciones p {
+        padding:  0 0 0 20px;
+    }
+    ul {
+        padding: 0 0 140px;
+    }
+}
